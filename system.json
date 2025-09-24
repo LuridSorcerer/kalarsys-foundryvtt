@@ -17,6 +17,12 @@
 		"name": "English",
 		"path": "lang/en.json"
 	}],
+	"esmodules": [
+		"kalarsys.mjs"
+	],
+	"styles": [
+		"kalarsys.css"
+	],
 	"socket": false,
 	"url": "https://github.com/LuridSorcerer/kalarsys-foundryvtt"
 }
