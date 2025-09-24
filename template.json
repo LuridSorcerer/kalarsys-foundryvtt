@@ -1,0 +1,24 @@
+{
+    "Actor": {
+        "types": [
+            "PC"
+        ],
+
+        "PC": {
+            "body":  1,
+            "mind":  1, 
+            "skill": 1
+        }
+    },
+
+    "Item": {
+        "types": [
+            "item"
+        ],
+
+        "item": {
+            "type": "item",
+            "quantity": 1
+        }
+    }
+}
