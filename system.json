@@ -2,5 +2,14 @@
 	"id": "kalarsys-foundryvtt",
 	"title": "Kalarsys",
 	"description": "Kalarsys is an easy-to-play and extensible role-playing system.",
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"authors": [{
+		"name": "Andrew Lingenfelter",
+		"url": "https://luridsorcerer.com",
+		"email": "andrew.lingenfelter@outlook.com"
+	}],
+	"compatibility": {
+		"minimum": 12,
+		"verified": 13
+	}
 }
