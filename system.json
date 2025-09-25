@@ -12,11 +12,6 @@
 		"minimum": 12,
 		"verified": 13
 	},
-	"languages": [{
-		"lang": "en",
-		"name": "English",
-		"path": "lang/en.json"
-	}],
 	"esmodules": [
 		"kalarsys.mjs"
 	],
