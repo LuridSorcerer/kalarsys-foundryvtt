@@ -16,7 +16,7 @@
 		"kalarsys.mjs"
 	],
 	"styles": [
-		"style/kalarsys.css"
+		"styles/kalarsys.css"
 	],
 	"socket": false,
 	"url": "https://github.com/LuridSorcerer/kalarsys-foundryvtt"
