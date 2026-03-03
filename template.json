@@ -1,24 +1,51 @@
 {
-    "Actor": {
-        "types": [
-            "PC"
-        ],
-
-        "PC": {
-            "body":  1,
-            "mind":  1, 
-            "skill": 1
-        }
-    },
-
-    "Item": {
-        "types": [
-            "item"
-        ],
-
-        "item": {
-            "type": "item",
-            "quantity": 1
-        }
-    }
+	"Actor": { 
+		"types": [ "character", "npc" ],
+		"pc": {
+			"exp": 0,
+			"hp": {
+				"current": 6,
+				"max": 6
+			},
+			"categories": {
+				"body":  2,
+				"mind":  2,
+				"skill": 2	
+			},
+			"stats": {
+				"str": 2,
+				"vit": 2,
+				"int": 2,
+				"wil": 2,
+				"dex": 2,
+				"agi": 2
+			},
+			"abilities": {}
+		},
+		"npc": {}
+	},
+	"Item": {
+		"types": [ "weapon", "armor", "shield", "ability" ],
+		"weapon": {
+			"requiredStr": 2,
+			"difficulty": 0,
+			"damage": 0,
+			"ranged": false,
+			"ammo": 0
+		},
+		"armor": {
+			"requiredStr": 2,
+			"weight": 0,
+			"protection": 0
+		},
+		"shield": {
+			"requiredStr": 2,
+			"block": 0
+		},
+		"spell": {},
+		"ability": {
+			"level": 1,
+			"points": 1
+		}	
+	}
 }
