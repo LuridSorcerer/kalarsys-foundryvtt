@@ -4,9 +4,9 @@
 	"description": "Kalarsys is an easy-to-play and extensible role-playing system.",
 	"version": "0.0.1",
 	"authors": [{
-		"name": "Andrew Lingenfelter",
+		"name": "Lurid Sorcerer",
 		"url": "https://luridsorcerer.com",
-		"email": "andrew.lingenfelter@outlook.com"
+		"email": "luridsorcerer@gmail.com"
 	}],
 	"compatibility": {
 		"minimum": 12,
