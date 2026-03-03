@@ -8,4 +8,11 @@ export class KalarsysActorSheet extends ActorSheet {
             height: 500    
         })
     }
+
+    async getData() {
+        const context = await super.getData();
+        context.system = this.actor.system.toObject();
+        console.log(context);
+        return context;
+    }
 }
