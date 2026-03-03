@@ -1,7 +1,7 @@
 {
 	"Actor": { 
 		"types": [ "character", "npc" ],
-		"pc": {
+		"character": {
 			"exp": 0,
 			"hp": {
 				"current": 6,

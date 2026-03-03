@@ -1,17 +1,17 @@
-import { KALARSYS } from "./modules/config.mjs";
+class KalarsysActorSheet extends ActorSheet {
 
-Hooks.once("init", async () => {
-    console.log("KALARSYS | Initializing game system");
+  static get defaultOptions() {
+    return mergeObject(super.defaultOptions, {
+      template: "systems/kalarsys-foundryvtt/templates/actor-sheet.hbs",
+      width: 650,
+      height: 500,
+    });
+  }
 
-    CONFIG.KALARSYS = KALARSYS;
-    CONFIG.INIT = true;
+}
 
-    //preloadHandlebarsTemplates();
-    //registerHandlebarsHelpers();
-
-});
-
-Hooks.once("ready", async () => {
-    CONFIG.INIT = false;
-    console.log("KALARSYS | Ready!");
+// Register the sheet
+Actors.registerSheet("kalarsys", KalarsysActorSheet, {
+  types: ["character"],
+  makeDefault: true
 });
