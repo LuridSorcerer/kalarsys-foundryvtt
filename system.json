@@ -19,5 +19,17 @@
 		"styles/kalarsys.css"
 	],
 	"socket": false,
-	"url": "https://github.com/LuridSorcerer/kalarsys-foundryvtt"
+	"url": "https://github.com/LuridSorcerer/kalarsys-foundryvtt",
+	"documentTypes": {
+		"Actor": {
+			"character": {},
+			"npc": {}
+		},
+		"Item": {
+			"weapon": {},
+			"armor": {},
+			"shield": {},
+			"ability": {}
+		}
+	}
 }

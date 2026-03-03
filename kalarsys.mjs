@@ -1,17 +1,13 @@
-class KalarsysActorSheet extends ActorSheet {
+import { KalarsysCharacterData } from "./models/actor-models.mjs";
 
-  static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
-      template: "systems/kalarsys-foundryvtt/templates/actor-sheet.hbs",
-      width: 650,
-      height: 500,
-    });
-  }
+import { KalarsysActorSheet } from "./sheets/actor-sheet.mjs";
 
-}
+Hooks.once("init", () => {
+  CONFIG.Actor.dataModels.character = KalarsysCharacterData;
+});
 
-// Register the sheet
 Actors.registerSheet("kalarsys", KalarsysActorSheet, {
   types: ["character"],
-  makeDefault: true
+  makeDefault: true,
+  label: "Kalarsys Character Sheet"
 });
