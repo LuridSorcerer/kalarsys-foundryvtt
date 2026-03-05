@@ -1,5 +1,69 @@
 <form class="kalarsys sheet actor">
 
-<p>Body: <input type="text" name="system.exp" value={{ system.exp }} /></p>
+<h1> {{ actor.name }} </h1>
+
+<!-- Physical description can go here, but it's not in the model -->
+
+<div class="container">
+	<div class="column">
+		HP: <input style="width:50px" type=number name="system.hp.current" value={{system.hp.current}} /> / 
+		<input style="width:50px" type=number name="system.hp.max" value={{system.hp.max}} /> <br/>
+	</div>
+	<div class="column">
+		EXP: <input style="width:100px" type=number name="system.exp" value={{system.exp}} />
+	</div>
+</div>
+
+<h2> Stats </h2>
+<div class="container">
+	<div class="column">
+		<table>
+			<tr>
+				<td><strong>BODY</strong></td>
+				<td><input class="stat-value" type="number" name="system.categories.body"  value={{system.categories.body }} /></td>
+			</tr>
+			<tr>
+				<td>STR</td>
+				<td><input class="stat-value" type="number" name="system.stats.str"  value={{system.stats.str }} /></td>
+			</tr>
+			<tr>
+				<td>VIT</td>
+				<td><input class="stat-value" type="number" name="system.stats.vit"  value={{system.stats.vit }} /></td>
+			</tr>
+		</table>
+	</div>
+	<div class="column">
+		<table>
+			<tr>
+				<td><strong>MIND</strong></td>
+				<td><input class="stat-value" type="number" name="system.categories.mind"  value={{system.categories.mind }} /></td>
+			</tr>
+			<tr>
+				<td>INT</td>
+				<td><input class="stat-value" type="number" name="system.stats.int"  value={{system.stats.int }} /></td>
+			</tr>
+			<tr>
+				<td>WIL</td>
+				<td><input class="stat-value" type="number" name="system.stats.wil"  value={{system.stats.wil }} /></td>
+			</tr>
+		</table>
+	</div>
+	<div class="column">
+		<table>
+			<tr>
+				<td><strong>SKILL</strong></td>
+				<td><input class="stat-value" type="number" name="system.categories.skill"  value={{system.categories.skill }} /></td>
+			</tr>
+			<tr>
+				<td>DEX</td>
+				<td><input class="stat-value" type="number" name="system.stats.dex"  value={{system.stats.dex }} /></td>
+			</tr>
+			<tr>
+				<td>AGI</td>
+				<td><input class="stat-value" type="number" name="system.stats.agi"  value={{system.stats.agi }} /></td>
+			</tr>
+		</table>
+	</div>
+</div>
 
 </form>
