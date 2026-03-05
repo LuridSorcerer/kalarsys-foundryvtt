@@ -6,11 +6,11 @@
 
 <div class="container">
 	<div class="column">
-		HP: <input style="width:50px" type=number name="system.hp.current" value={{system.hp.current}} /> / 
+		HP: <input style="width:50px" type=number name="system.hp.current" min="0" max={{system.hp.max}} value={{system.hp.current}} /> / 
 		<input style="width:50px" type=number name="system.hp.max" value={{system.hp.max}} /> <br/>
 	</div>
 	<div class="column">
-		EXP: <input style="width:100px" type=number name="system.exp" value={{system.exp}} />
+		EXP: <input style="width:100px" type=number name="system.exp" min="0" value={{system.exp}} />
 	</div>
 </div>
 
@@ -20,15 +20,15 @@
 		<table>
 			<tr>
 				<td><strong>BODY</strong></td>
-				<td><input class="stat-value" type="number" name="system.categories.body"  value={{system.categories.body }} /></td>
+				<td><input class="stat-value" type="number" name="system.categories.body" min="1" max="3" value={{system.categories.body }} /></td>
 			</tr>
 			<tr>
 				<td>STR</td>
-				<td><input class="stat-value" type="number" name="system.stats.str"  value={{system.stats.str }} /></td>
+				<td><input class="stat-value" type="number" name="system.stats.str" min="1" value={{system.stats.str }} /></td>
 			</tr>
 			<tr>
 				<td>VIT</td>
-				<td><input class="stat-value" type="number" name="system.stats.vit"  value={{system.stats.vit }} /></td>
+				<td><input class="stat-value" type="number" name="system.stats.vit" min="1" value={{system.stats.vit }} /></td>
 			</tr>
 		</table>
 	</div>
@@ -36,15 +36,15 @@
 		<table>
 			<tr>
 				<td><strong>MIND</strong></td>
-				<td><input class="stat-value" type="number" name="system.categories.mind"  value={{system.categories.mind }} /></td>
+				<td><input class="stat-value" type="number" name="system.categories.mind" min="1" max="3" value={{system.categories.mind }} /></td>
 			</tr>
 			<tr>
 				<td>INT</td>
-				<td><input class="stat-value" type="number" name="system.stats.int"  value={{system.stats.int }} /></td>
+				<td><input class="stat-value" type="number" name="system.stats.int" min="1" value={{system.stats.int }} /></td>
 			</tr>
 			<tr>
 				<td>WIL</td>
-				<td><input class="stat-value" type="number" name="system.stats.wil"  value={{system.stats.wil }} /></td>
+				<td><input class="stat-value" type="number" name="system.stats.wil" min="1" value={{system.stats.wil }} /></td>
 			</tr>
 		</table>
 	</div>
@@ -52,15 +52,15 @@
 		<table>
 			<tr>
 				<td><strong>SKILL</strong></td>
-				<td><input class="stat-value" type="number" name="system.categories.skill"  value={{system.categories.skill }} /></td>
+				<td><input class="stat-value" type="number" name="system.categories.skill" min="1" max="3" value={{system.categories.skill }} /></td>
 			</tr>
 			<tr>
 				<td>DEX</td>
-				<td><input class="stat-value" type="number" name="system.stats.dex"  value={{system.stats.dex }} /></td>
+				<td><input class="stat-value" type="number" name="system.stats.dex" min="1" value={{system.stats.dex }} /></td>
 			</tr>
 			<tr>
 				<td>AGI</td>
-				<td><input class="stat-value" type="number" name="system.stats.agi"  value={{system.stats.agi }} /></td>
+				<td><input class="stat-value" type="number" name="system.stats.agi" min="1" value={{system.stats.agi }} /></td>
 			</tr>
 		</table>
 	</div>
